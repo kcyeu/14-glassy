@@ -1083,6 +1083,7 @@ a.post-thumbnail:hover {
 }
 
 .site-content .entry-header {
+    opacity: 0.75; /* added by kmd, title of post*/
 	background-color: #fff;
 	padding: 0 10px 12px;
 }
@@ -2808,7 +2809,8 @@ a.post-thumbnail:hover {
 }
 
 .slider-control-paging {
-	background-color: #000;
+	//background-color: #000;
+	background-color: #0a4958;  /* modded by kmd, hard-code hack */
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing:    border-box;
 	box-sizing:         border-box;
@@ -2883,6 +2885,7 @@ a.post-thumbnail:hover {
 }
 
 .slider-direction-nav a {
+    opacity: 0.75;  /* added by kmd */
 	background-color: #000;
 	display: block;
 	font-size: 0;
@@ -3033,7 +3036,7 @@ a.post-thumbnail:hover {
 
 @media screen and (min-width: 401px) {
 	a.post-thumbnail:hover img {
-		opacity: 0.85;
+		opacity: 0.9;    /* commented by kmd, avoid darken when hover */
 	}
 
 	.full-size-link:before,
@@ -3258,6 +3261,7 @@ a.post-thumbnail:hover {
 	}
 
 	.slider .featured-content .entry-header {
+        opacity: 0.75; /* added by kmd, title of featured content*/
 		min-height: inherit;
 		padding: 24px 30px 48px;
 		position: absolute;
