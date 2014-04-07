@@ -2758,14 +2758,19 @@ a.post-thumbnail:hover {
 }
 
 .featured-content .entry-header {
-    //opacity: 0.5;  /* added by kmd */
+    bottom: 0;
+    opacity: 0.75;  /* added by kmd */
+    position: absolute; /* added by kmd */
+    //width: 100%;    /* added by kmd */
 	background-color: #000;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing:    border-box;
 	box-sizing:         border-box;
-	min-height: 96px;
+	//min-height: 96px;
+	min-height: 108px;  /* modded by kmd, to fix small screen height */
 	overflow: hidden;
-	padding: 24px 10px;
+	//padding: 24px 10px;
+	padding: 12px 10px; /* modded by kmd, to fix small screen height */
 }
 
 .featured-content a {
