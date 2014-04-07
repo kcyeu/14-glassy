@@ -2758,6 +2758,7 @@ a.post-thumbnail:hover {
 }
 
 .featured-content .entry-header {
+    //opacity: 0.5;  /* added by kmd */
 	background-color: #000;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing:    border-box;
@@ -3036,7 +3037,7 @@ a.post-thumbnail:hover {
 
 @media screen and (min-width: 401px) {
 	a.post-thumbnail:hover img {
-		opacity: 0.9;    /* commented by kmd, avoid darken when hover */
+		opacity: 0.9;    /* commented by kmd, no transparency when hover */
 	}
 
 	.full-size-link:before,
@@ -3950,6 +3951,7 @@ a.post-thumbnail:hover {
 	.slider .featured-content .entry-header,
 	.slider-control-paging {
 		width: 534px;
+		//width: 800px;
 	}
 
 	.slider-control-paging {
