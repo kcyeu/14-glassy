@@ -1063,7 +1063,7 @@ a.post-thumbnail:hover {
 .entry-header {
 	position: relative;
 	//z-index: 1;
-	z-index: 5;
+	z-index: 2; /* modded by kmd, to avoid touch scroll malfunction when small screen */
 }
 
 .entry-title {
@@ -2892,6 +2892,7 @@ a.post-thumbnail:hover {
 }
 
 .slider-direction-nav a {
+    //opacity: 0.75;  /* added by kmd */
 	background-color: #000;
 	display: block;
 	font-size: 0;
