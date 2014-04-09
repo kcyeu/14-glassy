@@ -2762,16 +2762,13 @@ a.post-thumbnail:hover {
     bottom: 0;
     opacity: 0.75;  /* added by kmd */
     position: absolute; /* added by kmd */
-    //width: 100%;    /* added by kmd */
 	background-color: #000;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing:    border-box;
 	box-sizing:         border-box;
-	//min-height: 96px;
-	min-height: 108px;  /* modded by kmd, to fix small screen height */
+	min-height: 96px;
 	overflow: hidden;
-	//padding: 24px 10px;
-	padding: 12px 10px; /* modded by kmd, to fix small screen height */
+	padding: 24px 10px;
 }
 
 .featured-content a {
@@ -2892,7 +2889,6 @@ a.post-thumbnail:hover {
 }
 
 .slider-direction-nav a {
-    //opacity: 0.75;  /* added by kmd */
 	background-color: #000;
 	display: block;
 	font-size: 0;
@@ -3039,6 +3035,23 @@ a.post-thumbnail:hover {
 		margin: 0 auto 24px;
 		padding: 0 10px;
 	}
+
+    /* added by kmd, start */
+    .featured-content .entry-header {
+        width: 100%;
+        min-height: 64px;
+        padding: 8px 8px; /* small screen height */
+    }
+
+    .featured-content a {
+        //text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .entry-meta {
+        display: none;
+    }
+    /* added by kmd, end */
 }
 
 @media screen and (min-width: 401px) {
@@ -3167,6 +3180,18 @@ a.post-thumbnail:hover {
 	.error404 .page-header {
 		margin-bottom: 24px;
 	}
+
+    /* added by kmd, start */
+    .featured-content .entry-header {
+        width: 100%;
+        padding: 12px 10px; /* small screen height */
+    }
+
+    .featured-content a {
+        //text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    /* added by kmd, end */
 }
 
 @media screen and (min-width: 594px) {
@@ -3178,6 +3203,12 @@ a.post-thumbnail:hover {
 	.site-content .has-post-thumbnail .entry-header {
 		margin-top: -48px;
 	}
+
+    /* added by kmd, end */
+    .featured-content a {
+        white-space: normal;
+    }
+    /* added by kmd, end */
 }
 
 @media screen and (min-width: 673px) {
@@ -3274,7 +3305,7 @@ a.post-thumbnail:hover {
 		position: absolute;
 		left: 0;
 		bottom: 0;
-		width: 50%;
+		width: 66%; /* modded by kmd */
 		z-index: 3;
 	}
 
@@ -3958,7 +3989,6 @@ a.post-thumbnail:hover {
 	.slider .featured-content .entry-header,
 	.slider-control-paging {
 		width: 534px;
-		//width: 800px;
 	}
 
 	.slider-control-paging {
