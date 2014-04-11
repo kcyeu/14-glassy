@@ -1,17 +1,16 @@
 /*
 Theme Name: Twenty Fourteen Child
 Theme URI: http://example.com/twentyfourteen-child/
+Description: Derived from WordPress 2014 official theme, fine-tuned for mobile devices to improve readability.
 Author: Kuo-Cheng Yeu
 Author URI: http://mikuru.tw/
-Description: In 2014, our default theme lets you create a responsive magazine website with a sleek, modern design. Feature your favorite homepage content in either a grid or a slider. Use the three widget areas to customize your website, and change your content's layout with a full-width page template and a contributor page to show off your authors. Creating a magazine website with WordPress has never been easier.
-Version: 1.0
+Template: twentyfourteen
+Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
 Text Domain: twentyfourteen-child
 
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
 */
 
 @import url("../twentyfourteen/style.css");
@@ -36,13 +35,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
  */
 
 .entry-header {
-	position: relative;
-	//z-index: 1;
-	z-index: 2; /* modded by kmd, to avoid touch scroll malfunction when small screen */
+	z-index: 2; /* to avoid touch scroll malfunction when small screen */
 }
 
 .site-content .entry-header {
-    opacity: 0.75; /* added by kmd, title of post*/
+    opacity: 0.75; /* title of post*/
 	background-color: #fff;
 	padding: 0 10px 12px;
 }
@@ -57,37 +54,22 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 .featured-content .entry-header {
     bottom: 0;
-    opacity: 0.75;  /* added by kmd */
-    position: absolute; /* added by kmd */
-	background-color: #000;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing:    border-box;
-	box-sizing:         border-box;
-	min-height: 96px;
-	overflow: hidden;
-	padding: 24px 10px;
+    opacity: 0.75;
+    position: absolute;
 }
 
 
 .slider-control-paging {
-	//background-color: #000;
-	background-color: #0a4958;  /* modded by kmd, hard-code hack */
+	background-color: #0a4958;  /* hard-code hack */
 }
 
 /**
  * 11.0 Media Queries
  * -----------------------------------------------------------------------------
  */
-
-/* Does the same thing as <meta name="viewport" content="width=device-width">,
- * but in the future W3C standard way. -ms- prefix is required for IE10+ to
- * render responsive styling in Windows 8 "snapped" views; IE10+ does not honor
- * the meta tag. See http://core.trac.wordpress.org/ticket/25888.
- */
 @media screen and (max-width: 400px) {
-    /* added by kmd, start */
     .featured-content .entry-header {
-        width: 100%;
+        width: 100%;        /* enhance readability */
         min-height: 64px;
         padding: 8px 8px; /* small screen height */
     }
@@ -105,10 +87,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 @media screen and (min-width: 401px) {
 	a.post-thumbnail:hover img {
-		opacity: 0.9;    /* commented by kmd, no transparency when hover */
+		opacity: 0.9;    /* no transparency when hover */
 	}
 
-    /* added by kmd, start */
     .featured-content .entry-header {
         width: 100%;
         padding: 12px 10px; /* small screen height */
@@ -118,18 +99,21 @@ Use it to make something cool, have fun, and share what you've learned with othe
         //text-overflow: ellipsis;
         white-space: nowrap;
     }
-    /* added by kmd, end */
 }
 
 @media screen and (min-width: 594px) {
-    /* added by kmd, end */
     .featured-content a {
         white-space: normal;
     }
-    /* added by kmd, end */
 }
 
 @media screen and (min-width: 673px) {
+    .slider .featured-content .entry-header {
+        opacity: 0.75; /* title of featured content*/
+        width: 66%;
+    }
+
+    .slider-control-paging {
+        width: 66%;
+    }
 }
-
-
