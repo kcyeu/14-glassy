@@ -53,7 +53,6 @@ Text Domain: twentyfourteen-child
 .featured-content .entry-header {
     bottom: 0;
     opacity: 0.75;
-    //position: absolute;
     position: relative;
 }
 
@@ -68,15 +67,12 @@ Text Domain: twentyfourteen-child
 @media screen and (max-width: 400px) {
     .grid .featured-content .entry-header,
     .ie8 .grid .featured-content .entry-header {
-    //    position: absolute;
+    //    position: relative;
     }
 
     .slider .featured-content .entry-header,
     .ie8 .slider .featured-content .entry-header {
         position: absolute;
-    }
-    .featured-content .entry-header {
-    //    position: absolute;
     }
 
     .featured-content .entry-header {
@@ -97,15 +93,12 @@ Text Domain: twentyfourteen-child
 @media screen and (min-width: 401px) {
     .grid .featured-content .entry-header,
     .ie8 .grid .featured-content .entry-header {
-    //    position: absolute;
+    //    position: relative;
     }
 
     .slider .featured-content .entry-header,
     .ie8 .slider .featured-content .entry-header {
         position: absolute;
-    }
-    .featured-content .entry-header {
-    //    position: absolute;
     }
 
 	a.post-thumbnail:hover img {
@@ -140,11 +133,11 @@ Text Domain: twentyfourteen-child
 	}
 
     .slider .featured-content .entry-header {
-        //opacity: 0.75; /* title of featured content*/
         width: 66%;
     }
 
     .slider-control-paging {
+        background-color: transparent;  /* hard-code hack */
         width: 66%;
     }
 
