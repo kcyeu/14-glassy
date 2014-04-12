@@ -28,7 +28,6 @@ Text Domain: twentyfourteen-child
  */
 
 
-
 /**
  * 6.2 Entry Header
  * -----------------------------------------------------------------------------
@@ -51,13 +50,12 @@ Text Domain: twentyfourteen-child
  * -----------------------------------------------------------------------------
  */
 
-
 .featured-content .entry-header {
     bottom: 0;
     opacity: 0.75;
-    position: absolute;
+    //position: absolute;
+    position: relative;
 }
-
 
 .slider-control-paging {
 	background-color: #0a4958;  /* hard-code hack */
@@ -68,6 +66,19 @@ Text Domain: twentyfourteen-child
  * -----------------------------------------------------------------------------
  */
 @media screen and (max-width: 400px) {
+    .grid .featured-content .entry-header,
+    .ie8 .grid .featured-content .entry-header {
+    //    position: absolute;
+    }
+
+    .slider .featured-content .entry-header,
+    .ie8 .slider .featured-content .entry-header {
+        position: absolute;
+    }
+    .featured-content .entry-header {
+    //    position: absolute;
+    }
+
     .featured-content .entry-header {
         width: 100%;        /* enhance readability */
         min-height: 64px;
@@ -75,45 +86,69 @@ Text Domain: twentyfourteen-child
     }
 
     .featured-content a {
-        //text-overflow: ellipsis;
         white-space: nowrap;
     }
 
     .entry-meta {
-        display: none;
+        display: none;  /* not show category when small screen */
     }
-    /* added by kmd, end */
 }
 
 @media screen and (min-width: 401px) {
+    .grid .featured-content .entry-header,
+    .ie8 .grid .featured-content .entry-header {
+    //    position: absolute;
+    }
+
+    .slider .featured-content .entry-header,
+    .ie8 .slider .featured-content .entry-header {
+        position: absolute;
+    }
+    .featured-content .entry-header {
+    //    position: absolute;
+    }
+
 	a.post-thumbnail:hover img {
-		opacity: 0.9;    /* no transparency when hover */
+		opacity: 1.0;
 	}
 
     .featured-content .entry-header {
-        width: 100%;
+        width: 100%;        /* enhance readability */
         padding: 12px 10px; /* small screen height */
     }
 
     .featured-content a {
-        //text-overflow: ellipsis;
         white-space: nowrap;
     }
 }
 
+/* transition */
 @media screen and (min-width: 594px) {
     .featured-content a {
-        white-space: normal;
+        //white-space: normal;
     }
 }
 
+/* mid large screen */
 @media screen and (min-width: 673px) {
+	a.post-thumbnail:hover img {
+		opacity: 0.85;
+	}
+
     .slider .featured-content .entry-header {
-        opacity: 0.75; /* title of featured content*/
+        //opacity: 0.75; /* title of featured content*/
         width: 66%;
     }
 
     .slider-control-paging {
         width: 66%;
+    }
+
+    .slider-direction-nav li {
+        opacity: 0.75
+    }
+
+    .featured-content a {
+        white-space: normal;
     }
 }
