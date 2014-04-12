@@ -131,7 +131,11 @@ Text Domain: twentyfourteen-child
 
 /* mid large screen */
 @media screen and (min-width: 673px) {
-	a.post-thumbnail:hover img {
+    .grid .featured-content .hentry:nth-child( 2n+1 ):last-child {                       
+        display: none;
+    }
+
+    a.post-thumbnail:hover img {
 		opacity: 0.85;
 	}
 
@@ -152,3 +156,10 @@ Text Domain: twentyfourteen-child
         white-space: normal;
     }
 }
+
+@media screen and (min-width: 1008px) {
+    .grid .featured-content .hentry:nth-child( 2n+1 ):last-child {
+        display: block;
+    }
+}
+
