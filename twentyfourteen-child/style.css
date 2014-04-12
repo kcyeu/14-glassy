@@ -128,7 +128,7 @@ Text Domain: twentyfourteen-child
         display: none;
     }
 
-    a.post-thumbnail:hover img {
+    .featured-content a.post-thumbnail:hover img {
 		opacity: 0.85;
 	}
 
