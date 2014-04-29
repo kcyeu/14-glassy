@@ -57,7 +57,9 @@ Text Domain: twentyfourteen-child
 }
 
 .slider-control-paging {
-	background-color: #0a4958;  /* hard-code hack */
+	//background-color: #0a4958;  /* hard-code hack */
+	background-color: transparent;
+    margin: -48px 0 0 0;
 }
 
 /**
@@ -77,8 +79,8 @@ Text Domain: twentyfourteen-child
 
     .featured-content .entry-header {
         width: 100%;        /* enhance readability */
-        min-height: 64px;
-        padding: 8px 8px; /* small screen height */
+        min-height: 72px;
+        padding: 8px 0px 16px 8px; /* small screen height */
     }
 
     .featured-content a {
@@ -118,7 +120,6 @@ Text Domain: twentyfourteen-child
 /* transition */
 @media screen and (min-width: 594px) {
     .featured-content a {
-        //white-space: normal;
     }
 }
 
@@ -137,7 +138,6 @@ Text Domain: twentyfourteen-child
     }
 
     .slider-control-paging {
-        background-color: transparent;  /* hard-code hack */
         width: 66%;
     }
 
