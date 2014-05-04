@@ -20,12 +20,22 @@ Text Domain: twentyfourteen-child
 
 /**
  * Table of Contents:
- *
+ * 5.0 - Navigation
  *   6.2 - Entry Header
  * 9.0 - Featured Content
  * 11.0 - Media Queries
  * -----------------------------------------------------------------------------
  */
+
+
+/**
+ * 5.0 Nagivation
+ * -----------------------------------------------------------------------------
+ */
+
+.menu-toggle {
+	background-color: transparent;
+}
 
 
 /**
@@ -87,6 +97,7 @@ Text Domain: twentyfourteen-child
         white-space: nowrap;
     }
 
+    .site-info,
     .entry-meta {
         display: none;  /* not show category when small screen */
     }
