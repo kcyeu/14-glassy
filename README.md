@@ -1,4 +1,3 @@
-<img src="http://s.w.org/about/images/logos/wordpress-logo-hoz-rgb.png" alt="WordPress Logo" height="64">
 twentyfourteen-reloaded
 =======================
 
