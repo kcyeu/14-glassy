@@ -1,5 +1,5 @@
-twentyfourteen-reloaded
-=======================
+14-Glassy
+==========
 
 14-Glassy is derived from the WordPress 2014 official theme. See [website] (http://mikuru.tw/ "kmd's  Weblog") for demo.
 
