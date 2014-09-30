@@ -13,4 +13,4 @@ Feature
 
 Screenshot
 -----------
-![14-Glassy](https://themes.svn.wordpress.org/14-glassy/1.0.0/screenshot.png)
+![14-Glassy](https://raw.githubusercontent.com/kcyeu/14-glassy/master/twentyfourteen-child/screenshot.png)
