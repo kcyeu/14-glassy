@@ -22,4 +22,4 @@ Screenshot
 
 License
 --------
-The images in the screenshot are adopted from http://skitterphoto.com/ and licensed under CC0.
+The images in the screenshot are adopted from [Skitter Photo](http://skitterphoto.com/) and licensed under CC0.
