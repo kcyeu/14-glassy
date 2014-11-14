@@ -13,7 +13,12 @@ Feature
 
 Screenshot
 -----------
-![14-Glassy](https://raw.githubusercontent.com/kcyeu/14-glassy/master/twentyfourteen-child/screenshot.png)
+### Native color scheme
+![14-Glassy native](https://raw.githubusercontent.com/kcyeu/14-glassy/master/twentyfourteen-child/screenshot.png)
+
+### Customized color scheme with [Fourteen Colors](https://wordpress.org/plugins/fourteen-colors/) Plugin
+![14-Glassy colored](https://raw.githubusercontent.com/kcyeu/14-glassy/master/screenshot-colored.png)
+
 
 License
 --------
