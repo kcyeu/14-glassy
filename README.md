@@ -7,7 +7,7 @@ Colors Plugin. See [website] (http://mikuru.tw/ "kmd's  Weblog") for demo.
 
 Download
 ---------
-14-Glassy is available on [WordPress Official Themes Directory](https://wordpress.org/themes/14-glass).
+14-Glassy is available on [WordPress Official Themes Directory](https://wordpress.org/themes/14-glassy).
 
 
 Feature
