@@ -1,6 +1,9 @@
 14-Glassy
 ==========
 
+![WordPress 3.8+](https://img.shields.io/badge/wordpress-3.8+-brightgreen.svg)
+![License CC0](https://img.shields.io/badge/license-CC0-blue.svg)
+
 14-Glassy is derived from the WordPress 2014 official theme, fine-tuned for 
 mobile devices to improve readability. Support native color scheme and Fourteen 
 Colors Plugin. See [website] (http://mikuru.tw/ "kmd's  Weblog") for demo.
